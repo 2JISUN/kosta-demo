@@ -1,5 +1,15 @@
-git add Jenkinsfile
-git commit -m 'add Jenkinsfile'
-git push -u URL master
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+    }
+}
+
+
 
 
